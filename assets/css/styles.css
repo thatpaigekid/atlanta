@@ -50,6 +50,12 @@ h3 {
     font-size: 35px;
 }
 
+h4 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
 p {
     font-size: 20px;
     text-align: left;
@@ -57,7 +63,7 @@ p {
 }
 
 /*layout*/
-header { grid-column: 1/4;}
+header { grid-column: 1/4; background-color: var(--primary1)}
 section {grid-column: 2/4;  }
 article {grid-row: 2/4;  }
 footer {

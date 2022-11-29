@@ -6,9 +6,9 @@
    
     --dark: #222222;
     --medium: #444444;
-    --light: #CCCCCC;
+    --light: #efefef;
    
-   }
+}
    
 .menu ul {
     margin: 100px;
@@ -28,11 +28,11 @@
     display: block;
     padding: 5px 10px;
     text-decoration: none;
-    color: var(--primary1);
+    color: var(--light);
 
     font-size: 25px;
 }
 
-.menu a hover {
-    color: #CCCCCC;
+.menu a:hover {
+    transition: all ease-in-out var(--medium);
 }
