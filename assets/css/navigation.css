@@ -1,0 +1,38 @@
+/*menu styles*/
+:root {
+    --primary1: #471C3f;
+    --primary2: #61435B;
+    --primary3: #DF9ABB;
+   
+    --dark: #222222;
+    --medium: #444444;
+    --light: #efefef;
+   
+}
+   
+.menu ul {
+    margin: 100px;
+    padding-left: 0;
+    list-style-type: none;
+
+    display: flex;
+    justify-content: center;
+}
+
+ .menu li {
+    font-family: 'Outfit', sans-serif; 
+    text-transform: lowercase;
+}
+
+.menu a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: var(--light);
+
+    font-size: 25px;
+}
+
+.menu a:hover {
+    transition: all ease-in-out var(--medium);
+}

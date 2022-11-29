@@ -1,0 +1,77 @@
+/*
+font-family: 'Outfit', sans-serif;
+font-family: 'Quicksand', sans-serif;
+*/
+
+/*color variables*/
+:root {
+ --primary1: #471C3f;
+ --primary2: #61435B;
+ --primary3: #DF9ABB;
+
+ --dark: #222222;
+ --medium: #444444;
+ --light: #CCCCCC;
+}
+
+/*base styles*/
+.container {
+    margin: 0;
+   
+ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.container > * {
+    font-family: 'Quicksand', sans-serif;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*font-sizes*/
+h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 56px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 45px;
+}
+
+h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 35px;
+}
+
+h4 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    text-align: left;
+    margin: 5em;
+}
+
+/*layout*/
+header { grid-column: 1/4; background-color: var(--primary1)}
+section {grid-column: 2/4;  }
+article {grid-row: 2/4;  }
+footer {
+    grid-column: 1/4; 
+    background-color: #471C3f; 
+    color:white;
+    max-width: 100vw; 
+}
+
+
+
