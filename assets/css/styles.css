@@ -82,7 +82,14 @@ header {
 }
 
 section {grid-column: 2/4;}
-article {grid-row: 2/4; }
+.slideshow{
+    text-align: center;
+}
+
+article.sidebar {
+    grid-row: 2/4;
+    background-color: #DF9ABB; 
+}
 
 footer {
    
