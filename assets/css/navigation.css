@@ -28,7 +28,7 @@
 
 }
 
-.menu a {
+.menu a{
     display: block;
     padding: 5px 20px;
     text-decoration: none;
@@ -37,7 +37,7 @@
  
 }
 
-.menu a:hover {
+.menu a:hover, footer a:hover {
     color: var(--primary3);
     transition: all ease-in 200ms;
     text-decoration: underline;
