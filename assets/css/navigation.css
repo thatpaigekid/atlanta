@@ -18,7 +18,11 @@
     display: flex;
     justify-content: center;
 }
- .menu li {font-family: 'Outfit', sans-serif; text-transform: lowercase;}
+
+ .menu li {
+    font-family: 'Outfit', sans-serif; 
+    text-transform: lowercase;
+}
 
 .menu a {
     display: block;
