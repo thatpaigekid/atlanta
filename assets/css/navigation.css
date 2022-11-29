@@ -11,28 +11,38 @@
 }
    
 .menu ul {
-    margin: 100px;
+    margin: 35px;
     padding-left: 0;
     list-style-type: none;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    
 }
 
  .menu li {
     font-family: 'Outfit', sans-serif; 
+    font-size: 20px;
     text-transform: lowercase;
+
+
 }
 
 .menu a {
     display: block;
-    padding: 5px 10px;
+    padding: 5px 20px;
     text-decoration: none;
     color: var(--light);
 
-    font-size: 25px;
+ 
 }
 
 .menu a:hover {
-    transition: all ease-in-out var(--medium);
+    color: var(--primary3);
+    transition: all ease-in 200ms;
+    text-decoration: underline;
+}
+
+.menu a:active {
+    color: var(--primary3);
 }
