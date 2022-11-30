@@ -17,12 +17,10 @@
     list-style-type: none;
 
     display: flex;
-    justify-content: flex-end;
-    
+
 }
 
  .menu li {
-
     font-family: 'Outfit', sans-serif; 
     font-size: 20px;
     text-transform: lowercase;
@@ -44,4 +42,14 @@
 
 .menu a:active {
     color: var(--primary3);
+}
+
+.menu a.active {
+    color: var(--primary3);
+}
+
+footer a {
+    color: var(--primary3);
+    font-weight: 700;
+    text-decoration: none;
 }

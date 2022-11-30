@@ -16,6 +16,8 @@ font-family: 'Quicksand', sans-serif;
 
 /*base styles*/
 .container {
+    
+    background-color: #e8e8e8;
     margin: 0;
 
     display: grid;
@@ -33,16 +35,10 @@ font-family: 'Quicksand', sans-serif;
 
 }
 
-/*make anything sticky*/
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
-  }
-  
 
-/*font-sizes*/
+/*font-sizes and rules*/
 h1 {
+    filter: drop-shadow(1px 1px 1px var(--medium));
     font-family: 'Outfit', sans-serif;
     color: var(--primary1);
     font-size: 56px;
@@ -76,21 +72,23 @@ p {
     margin: 5em;
 }
 
-/*layout styles*/
+/*layout styles for landing page*/
 header { 
-
+    
     position: fixed;
     width: 100%;
-
 
     grid-column: 1/4; 
     background-color: var(--primary1);
     opacity: 90%;
 
+  
+
 }
 
-section {
-    margin-top: 200px;
+section.summary {
+   
+    margin-top: 110px;
     grid-column: 2/4;
 
 } 
@@ -100,11 +98,32 @@ section {
 }
 
 article.sidebar {
+    margin-top: 120px;
+    margin-left: 20px;
 
     grid-row: 1/2;
     background-color: #DF9ABB; 
     border-radius: 4px;
+
+    display: flex;
+    flex-direction: column; 
 }
+
+article.sidebar p, h2 {
+    justify-content: space-around;
+    margin: 10px;
+    width: 85%;
+}
+
+.petcare, .pet-of-the-day {
+    margin: 20px;
+
+}
+
+article.sidebar p {
+    font-size: 18px;
+}
+
 
 footer {
     grid-column: 1/4; 
@@ -119,6 +138,10 @@ footer p {
     color: #CCCCCC;
     max-width: 25%;
 }
+
+
+
+
 
 
 
