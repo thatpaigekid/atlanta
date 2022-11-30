@@ -11,30 +11,29 @@
 }
    
 .menu ul {
+   
     margin: 35px;
     padding-left: 0;
     list-style-type: none;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     
 }
 
  .menu li {
+
     font-family: 'Outfit', sans-serif; 
     font-size: 20px;
     text-transform: lowercase;
-
-
 }
 
 .menu a{
+  
     display: block;
     padding: 5px 20px;
     text-decoration: none;
     color: var(--light);
-
- 
 }
 
 .menu a:hover, footer a:hover {
