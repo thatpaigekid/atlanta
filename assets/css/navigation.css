@@ -17,6 +17,8 @@
     list-style-type: none;
 
     display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -53,3 +55,15 @@ footer a {
     font-weight: 700;
     text-decoration: none;
 }
+
+.options{
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+}
+
+.available-dropdown:hover .options {
+    display: block;
+}
+

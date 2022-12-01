@@ -4,21 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Title Here</title>
+    <title>Companion Finder | Application </title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/navigation.css">
+
 </head>
-<body> 
-      <header>
-        <a href="index.html" class="title">Companion Finder</a>
-        <nav class="navbar">    
-            <ul>
-                <li><a href="cats.html">About Cats</a></li>
-                <li><a href="dogs.html">About Dogs</a></li>
-                <li><a href="adoptables.html">List of Adoptables</a></li>
-                <li><a href="adopt.html">Adopt a Pet!</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav> 
-    </header>
+<body class="container">
+<header class="">
+
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html" ><img src="./assets/images/dog-logo-white-resized.png" alt=""></a></li>
+            <li class="available-dropdown">
+                <a >Available Pets &#9660;</a>
+                <div class="options">
+                    <a href="cats.html">Cats</a>
+                    <a href="dogs.html">Dogs</a>
+                </div>
+            </li>
+
+            <li><a href="adopt.html" class="active">Adopt a Pet!</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+</header>
+
     <h2>Guideline for adoption</h2>
 
     <p>Please fill out the information below:</p>
@@ -85,5 +97,10 @@
     <p>BY CLICKING THIS BOX, I ASSUME FULL CUSTODY OF THIS ANIMAL. I TAKE FULL RESPONSIBILITY FOR TAKING CARE OF THIS ANIMAL AND WILL WAIVE MY RIGHTS TO SUE OR TAKE LEGAL ACTION AGAINST COMPANION FINDER OR ITS WORKERS. [select box]</p>
 
     <p>[submit button]</p>
+
+  <footer>
+      <p> Companion Finder is a private nonprofit charity that relies on donations from people like you. If you want to help support us, please reach out to us on our <a href="./contact.html">contact page</a>.</p>
+  </footer>
+
 </body>
 </html>
