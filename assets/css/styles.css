@@ -118,11 +118,16 @@ article.sidebar p, h2 {
 }
 
 /*pet page styles*/
-article.pets {
+.pet-gallery {
     margin-top: 100px;
-    display: flex;
-    
+    display: grid;  
+    gap: 20px;
+    grid-template-columns: repeat(3,auto);
 }
+
+
+
+
 
 article.pets, h3 {
     text-align: center;
@@ -132,6 +137,8 @@ article.pets ul {
     text-align: left;
     list-style-type: none;
 }
+
+
 
 
 
