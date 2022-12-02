@@ -39,72 +39,70 @@
 
 </header>
 
-    <h2>Guideline for adoption</h2>
+    <h2>Application for Adoption</h2>
 
-    <p>Please fill out the information below:</p>
+    <form>
 
     <h3>Basic Info</h3>
 
-    <ol>
-        <li> Select a type of pet you want to adopt:
-            <ul>
-                <li>Dogs
-                    <ul>
-                        <li> [If selected Dogs] Please select the type of dog you want to adopt. [Drop down menu]</li>
-                    </ul>
-                </li>
-                <li>Cats </li>
-            </ul>
-        </li>
-        <li> [If selected Cats] Please select the type of cat you want to adopt. [Drop down menu]</li>
-        <li>Set up an appointment time to pick up: [use calendar popup]</li>
-        <li>Name of adoptee</li>
-        <li>Email field</li>
-        <li>Your age</li>
-        <li>Your Job</li>
-        <li>Employer</li>
-        <li>Street address</li>
-        <li>Character references</li>
-    </ol>
+
+        <input type="text" id="petname" name="petname" placeholder="Adoptee Name">
+        <input type="email" id="email" name="email" placeholder="email">
+        <input type="number" id="age" name="age" placeholder="Age">
+        <input type="text" id="employer" name="employer" placeholder="Employer">
+        <input type="text" id="address" name="address" placeholder="Address">
+        <label for="references">Character References</label>
+        <input type="text" id="references" name="references" placeholder="Please provide name and contact for references">
 
     <h3>Household Info</h3>
 
-    <ol>
-        <li>Where do you live? [Select all that apply (use select field)]
 
-            <ul>
-                <li>House</li>
-                <li>Apartment</li>
-                <li>Other </li>
-            </ul></li>
-        <li>Do you own or rent your building[use radio buttons]
-            <ul>
-                <li>Own</li>
-                <li>Rent</li>
-            </ul></li>
-        <li>Is your yard fenced [use radio buttons]
-            <ul>
-                <li>Yes</li>
-                <li>No</li>
-            </ul></li>
-        <li>Does everyone in the household agree to adopt this pet [use radio buttons]
-            <ul>
-                <li>Yes</li>
-                <li>No</li>
-            </ul></li>
-        <li>Don’t know</li>
-    </ol>
+        <p>Where do you live?</p>
+            <input type="checkbox" id="house1" name="house1" >
+            <label for="house1">House</label><br>
+            <input type="checkbox" id="house2" name="house2" >
+            <label for="house2">Apartment</label><br>
+            <input type="checkbox" id="house3" name="house3" >
+            <label for="house3">other</label>
+
+        <p>Do you own or rent your building?</p>
+            <input type="radio" id="own" name="own" >
+            <label for="own">Own</label><br>
+            <input type="radio" id="rent" name="rent" >
+            <label for="rent">Rent</label><br>
+
+
+        <p>Is your yard fenced? </p>
+        <input type="radio" id="fenced" name="fenced" >
+        <label for="fenced">Yes</label><br>
+        <input type="radio" id="notfenced" name="notfenced" >
+        <label for="notfenced">No</label><br>
+
+        <p>Does everyone in the household agree to adopt this pet?</p>
+            <input type="radio" id="allwant" name="all want" >
+            <label for="allwant">Yes</label><br>
+            <input type="radio" id="dontwant" name="dontwant" >
+            <label for="dontwant">No</label><br>
+            <input type="radio" id="unsurewant" name="unsurewant" >
+            <label for="unsurewant">Don't Know</label><br>
+
+
     <h3>New Pet Information</h3>
-    <ol>
-        <li>If the dog has an <q>accident</q> in your home, what type of correction do you plan to use? [text field]</li>
-        <li>Where will your new dog stay when nobody is home? [text field]</li>
-    </ol>
+    <label for="correction">If the dog has an <q>accident</q> in your home, what type of correction do you plan to use? </label>
+    <input type="text" id="correction" name="correction">
+    <label for="sitter">Where will your new dog stay when nobody is home?</label>
+    <input type="text" id="sitter" name="sitter">
+
 
     <h3>Please click the button below:</h3>
 
-    <p>BY CLICKING THIS BOX, I ASSUME FULL CUSTODY OF THIS ANIMAL. I TAKE FULL RESPONSIBILITY FOR TAKING CARE OF THIS ANIMAL AND WILL WAIVE MY RIGHTS TO SUE OR TAKE LEGAL ACTION AGAINST COMPANION FINDER OR ITS WORKERS. [select box]</p>
+    <input type="checkbox" id="liability" required>
+    <label for="liability">BY CLICKING THIS BOX, I ASSUME FULL CUSTODY OF THIS ANIMAL. I TAKE FULL RESPONSIBILITY FOR TAKING CARE OF THIS ANIMAL AND WILL WAIVE MY RIGHTS TO SUE OR TAKE LEGAL ACTION AGAINST COMPANION FINDER OR ITS WORKERS. [select box]</label>
 
-    <p>[submit button]</p>
+    <input type="submit">
+
+
+    </form>
 
   <footer>
       <p> Companion Finder is a private nonprofit charity that relies on donations from people like you. If you want to help support us, please reach out to us on our <a href="./contact.html">contact page</a>.</p>
