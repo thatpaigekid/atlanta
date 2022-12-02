@@ -39,70 +39,175 @@
 
 </header>
 
-    <h2>Application for Adoption</h2>
+    
+    <h1>Guideline for adoption</h1>
 
-    <form>
+    <p>Please fill out the information below:</p>
 
-    <h3>Basic Info</h3>
+    <h2>Basic Info</h2>
 
+        <!--
 
-        <input type="text" id="petname" name="petname" placeholder="Adoptee Name">
-        <input type="email" id="email" name="email" placeholder="email">
-        <input type="number" id="age" name="age" placeholder="Age">
-        <input type="text" id="employer" name="employer" placeholder="Employer">
-        <input type="text" id="address" name="address" placeholder="Address">
-        <label for="references">Character References</label>
-        <input type="text" id="references" name="references" placeholder="Please provide name and contact for references">
-
-    <h3>Household Info</h3>
+        NOTE: If we are going to use drop-down menus, then I think we might need to use AJAX for this.
 
 
-        <p>Where do you live?</p>
-            <input type="checkbox" id="house1" name="house1" >
-            <label for="house1">House</label><br>
-            <input type="checkbox" id="house2" name="house2" >
-            <label for="house2">Apartment</label><br>
-            <input type="checkbox" id="house3" name="house3" >
-            <label for="house3">other</label>
-
-        <p>Do you own or rent your building?</p>
-            <input type="radio" id="own" name="own" >
-            <label for="own">Own</label><br>
-            <input type="radio" id="rent" name="rent" >
-            <label for="rent">Rent</label><br>
-
-
-        <p>Is your yard fenced? </p>
-        <input type="radio" id="fenced" name="fenced" >
-        <label for="fenced">Yes</label><br>
-        <input type="radio" id="notfenced" name="notfenced" >
-        <label for="notfenced">No</label><br>
-
-        <p>Does everyone in the household agree to adopt this pet?</p>
-            <input type="radio" id="allwant" name="all want" >
-            <label for="allwant">Yes</label><br>
-            <input type="radio" id="dontwant" name="dontwant" >
-            <label for="dontwant">No</label><br>
-            <input type="radio" id="unsurewant" name="unsurewant" >
-            <label for="unsurewant">Don't Know</label><br>
+        <li> Select a type of pet you want to adopt:
+            <ul>
+                <li>Dogs
+                    <ul>
+                        <li> [If selected Dogs] Please select the type of dog you want to adopt. [Drop down menu]</li>
+                    </ul>
+                </li>
+                <li>Cats 
+                    <ul>
+                        <li> [If selected Cats] Please select the type of cat you want to adopt. [Drop down menu]</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+-->
 
 
-    <h3>New Pet Information</h3>
-    <label for="correction">If the dog has an <q>accident</q> in your home, what type of correction do you plan to use? </label>
-    <input type="text" id="correction" name="correction">
-    <label for="sitter">Where will your new dog stay when nobody is home?</label>
-    <input type="text" id="sitter" name="sitter">
+
+<section class="adopt">
+    <form action="" class="adoption-form">
+        <div class="adopt-title">
+           <h2>Basic Info</h2>
+            <p>Please fill out the information below</p>
+         <div>
+            <label for="time">Set up an appointment time to pick up:</label>
+            <input type="date" name="time" id="time">
+        </div>
+        <div>
+            <label for="name">Name of adoptee:</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age">
+        </div>
+        <div>
+            <label for="job">Your Job:</label>
+            <input type="text" name="job" id="job">
+        </div>
+        <div>
+            <label for="employer">Employer:</label>
+            <input type="text" name="employer" id="employer">
+        </div>
+        <div>
+            <label for="address">Your Address:</label>
+            <input type="text" name="address" id="address">
+        </div>
+        <div>
+            <label for="job">Your Job:</label>
+            <input type="text" name="job" id="job">
+        </div>
+        <div>
+            <label for="job">Character References:</label>
+            <input type="text" name="job" id="job">
 
 
-    <h3>Please click the button below:</h3>
+        </div>
+ 
+    <h2>Household Info</h2>
+        <fieldset>
+            <!-- Like a div, but will draw a box-->
+            <legend>Answer the questions below:</legend>
+            <h3 class="question">Where do you live? (Select all that apply.)</h3>
+            
+            <legend>Required Questions</legend>
+            <!-- One legend per field set-->
+            <div>
+                <input type="checkbox" name="house" id="house" value="l1">
+                <label for="house">House</label>
+                <!-- name and for should match up -->
+            </div>
+            <div>
+                <input type="checkbox" name="apartment" id="apartment" value="l2">
+                <label for="apartment">Apartment</label>
+            </div>
+            <div>
+                <input type="checkbox" name="other" id="other" value="l3">
+                <label for="other">Other</label>
+            </div>
+            
+            <h3 class="question">Do you own or rent your building?</h3>
+            
+            <legend> Pick one answer.</legend>
+            <div>
+                <input type="radio" name="ownOrRent" id="own">
+                <label for="own">Own</label>
 
-    <input type="checkbox" id="liability" required>
-    <label for="liability">BY CLICKING THIS BOX, I ASSUME FULL CUSTODY OF THIS ANIMAL. I TAKE FULL RESPONSIBILITY FOR TAKING CARE OF THIS ANIMAL AND WILL WAIVE MY RIGHTS TO SUE OR TAKE LEGAL ACTION AGAINST COMPANION FINDER OR ITS WORKERS. [select box]</label>
+            </div>
+            <div>
+                <input type="radio" name="ownOrRent" id="rent">
+                <label for="rent">Rent</label>
+            </div>
+            
+            <h3 class="question">Is your yard fenced?</h3>
+            
+            <legend> Pick one answer.</legend>
+            <div>
+                <input type="radio" name="isFenced" id="yes-1">
+                <label for="yes-1">Yes</label>
 
-    <input type="submit">
+            </div>
+            <div>
+                <input type="radio" name="isFenced" id="no-1">
+                <label for="no-1">No</label>
+            </div>
+            
+            <h3 class="question">Does everyone in the household agree to adopt this pet?</h3>
+            
+            <legend> Pick one answer.</legend>
+            <div>
+                <input type="radio" name="agree" id="yes-2">
+                <label for="yes-2">Yes</label>
 
+            </div>
+            <div>
+                <input type="radio" name="agree" id="no-2">
+                <label for="no-2">No</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="agree" id="dont-know">
+                <label for="dont-know">Don't Know</label>
+            </div>
 
+    </fieldset>
+    
+    <h2>New Pet Information</h2>
+    <div>
+    <label for="correction" class="question">If the dog has an <q>accident</q> in your home, what type of correction do you plan to use?</label>
+    </div>
+        <textarea name="correction" id="correction"></textarea>
+    
+    <div>
+    <label for="whereToStay" class="question">Where will your new dog stay when nobody is home?</label>
+    </div>
+        <textarea name="whereToStay" id="whereToStay"></textarea>
+    
+    <h3 class="question">Please click the box below.</h3>
+    <fieldset>
+        
+            <legend>BY CLICKING THIS BOX, I ASSUME FULL CUSTODY OF THIS ANIMAL. I TAKE FULL RESPONSIBILITY FOR TAKING CARE OF THIS ANIMAL AND WILL WAIVE MY RIGHTS TO SUE OR TAKE LEGAL ACTION AGAINST COMPANION FINDER OR ITS WORKERS</legend>
+            <!-- One legend per field set-->
+            <div>
+                <input type="checkbox" name="box" id="box" value="l99">
+                <label for="box">CLICK THE BOX</label>
+                <!-- name and for should match up -->
+            </div>
+    </fieldset>
+
+    <button>SUBMIT</button>
+        </div>
     </form>
+    </section>
 
   <footer>
       <p> Companion Finder is a private nonprofit charity that relies on donations from people like you. If you want to help support us, please reach out to us on our <a href="./contact.html">contact page</a>.</p>
