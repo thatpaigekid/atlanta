@@ -59,7 +59,11 @@ footer a {
 .options{
     display: none;
     position: absolute;
-    background-color: black;
+    background-color: var(--primary2);
+    border-radius: 4px;
+    border: 1px solid var(--dark);
+    font-size: smaller;
+    filter: drop-shadow(1px 1px 1px var(--medium));
     min-width: 160px;
 }
 
