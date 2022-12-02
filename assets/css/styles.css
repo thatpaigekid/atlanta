@@ -28,7 +28,6 @@ font-family: 'Quicksand', sans-serif;
 .container > * {
     font-family: 'Quicksand', sans-serif;
 
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,63 +40,53 @@ h1 {
     filter: drop-shadow(1px 1px 1px var(--medium));
     font-family: 'Outfit', sans-serif;
     color: var(--primary1);
-    font-size: 56px;
+    font-size: 50px;
     text-align: center;
 }
 
 h2 {
     font-family: 'Outfit', sans-serif;
     color: var(--primary1);
-    font-size: 45px;
+    font-size: 40px;
 }
 
 h3 {
     font-family: 'Outfit', sans-serif;
     color: var(--primary1);
-    font-size: 35px;
+    font-size: 30px;
 }
 
 h4 {
     font-family: 'Outfit', sans-serif;
     color: var(--primary1);
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
 }
 
 p {
-    font-size: 20px;
+    font-size: 18px;
     color: var(--dark);
-    font-weight: 600;
+
     text-align: left;
     margin: 3em;
 }
 
 /*layout styles for landing page*/
 header { 
-    
     position: fixed;
     width: 100%;
-
     grid-column: 1/4; 
     background-color: var(--primary1);
     opacity: 90%;
-
-  
-
 }
 
 section.summary {
-   
-    margin-top: 110px;
     grid-column: 2/4;
-
-
 }
 
 section.summary h2{
     text-align: center;
-    margin-top: 2em;
-
+    margin-top: 1em;
 }
 
 .slideshow{
@@ -107,6 +96,7 @@ section.summary h2{
 article.sidebar {
     margin-top: 120px;
     margin-left: 20px;
+    max-width: 90%;
 
     grid-row: 1/2;
     background-color: #DF9ABB; 
@@ -127,9 +117,7 @@ article.sidebar p, h2 {
 
 }
 
-article.sidebar p {
-    font-size: 18px;
-}
+
 
 /*pet page styles*/
 article.pets {
