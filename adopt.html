@@ -45,36 +45,13 @@
     <p>Please fill out the information below:</p>
 
     <h2>Basic Info</h2>
-
-        <!--
-
-        NOTE: If we are going to use drop-down menus, then I think we might need to use AJAX for this.
-
-
-        <li> Select a type of pet you want to adopt:
-            <ul>
-                <li>Dogs
-                    <ul>
-                        <li> [If selected Dogs] Please select the type of dog you want to adopt. [Drop down menu]</li>
-                    </ul>
-                </li>
-                <li>Cats 
-                    <ul>
-                        <li> [If selected Cats] Please select the type of cat you want to adopt. [Drop down menu]</li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
--->
-
-
-
+    
 <section class="adopt">
-    <form action="" class="adoption-form">
+    <form action="null" class="adoption-form">
         <div class="adopt-title">
            <h2>Basic Info</h2>
             <p>Please fill out the information below</p>
-        <label for="Pet">Choose a pet type:</label>
+        <label for="pet">Choose a pet type:</label>
         <select name="pet" id="pet">
             <option value="select">Select...</option>
             <option value="dog">Dog</option>
@@ -114,12 +91,8 @@
             <input type="text" name="address" id="address">
         </div>
         <div>
-            <label for="job">Your Job:</label>
-            <input type="text" name="job" id="job">
-        </div>
-        <div>
-            <label for="job">Character References:</label>
-            <input type="text" name="job" id="job">
+            <label for="reference">Character References:</label>
+            <input type="text" name="reference" id="reference">
 
 
         </div>
@@ -130,7 +103,7 @@
             <legend>Answer the questions below:</legend>
             <h3 class="question">Where do you live? (Select all that apply.)</h3>
             
-            <legend>Required Questions</legend>
+           
             <!-- One legend per field set-->
             <div>
                 <input type="checkbox" name="house" id="house" value="l1">
@@ -147,8 +120,7 @@
             </div>
             
             <h3 class="question">Do you own or rent your building?</h3>
-            
-            <legend> Pick one answer.</legend>
+
             <div>
                 <input type="radio" name="ownOrRent" id="own">
                 <label for="own">Own</label>
@@ -160,8 +132,7 @@
             </div>
             
             <h3 class="question">Is your yard fenced?</h3>
-            
-            <legend> Pick one answer.</legend>
+
             <div>
                 <input type="radio" name="isFenced" id="yes-1">
                 <label for="yes-1">Yes</label>
@@ -174,7 +145,6 @@
             
             <h3 class="question">Does everyone in the household agree to adopt this pet?</h3>
             
-            <legend> Pick one answer.</legend>
             <div>
                 <input type="radio" name="agree" id="yes-2">
                 <label for="yes-2">Yes</label>
