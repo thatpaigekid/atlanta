@@ -85,8 +85,7 @@ section.summary {
 }
 
 section.summary h2{
-    text-align: center;
-    margin-top: 1em;
+   
 }
 
 .slideshow{
@@ -130,9 +129,7 @@ article.sidebar p, h2 {
 
 
 
-article.pets, h3 {
-    text-align: center;
-}
+
 
 article.pets ul {
     text-align: left;
