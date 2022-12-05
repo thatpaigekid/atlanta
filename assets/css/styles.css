@@ -117,6 +117,48 @@ article.sidebar p, h2 {
     width: 85%;
 }
 
+.slideshow{
+    height: 400px;
+    width: 600px;
+    overflow: hidden;
+    margin: 10px auto;
+
+}
+
+ .mySlides {
+    display: none;
+
+
+  }
+
+  #firstSlide{
+      display: block;
+  }
+
+
+#dot-container{
+    text-align: center;
+    margin: 20px;
+
+}
+
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+
+  .activedot, .dot:hover {
+    background-color: #717171;
+  }
+
 
 
 .pet-of-the-day > img{
@@ -215,7 +257,11 @@ footer p {
 }
 
 @media (max-width:  900px){
+    .slideshow{
+        height: 300px;
+        width: 400px;
 
+    }
 }
 
 @media (max-width:  400px){
@@ -224,7 +270,11 @@ footer p {
     body > nav > ul > li > a {display: block;}
     section {margin-top: 100px;}
     .pets{display: initial;}
+    .slideshow{
+        height: 200px;
+        width: 350px;
 
+    }
 
 }
 
