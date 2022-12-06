@@ -94,6 +94,10 @@ section.summary h2{
    
 }
 
+.summary-img-about{
+    width: 100%;
+}
+
 .slideshow{
     text-align: center;
 }
@@ -258,22 +262,25 @@ footer p {
 
 @media (max-width:  900px){
     .slideshow{
-        height: 300px;
-        width: 400px;
+        width: 500px;
+        height:400px;
+
 
     }
 }
 
-@media (max-width:  400px){
+
+
+@media (max-width:  500px){
     .container { display: initial; }
     .container > * {text-align: center;}
     body > nav > ul > li > a {display: block;}
     section {margin-top: 100px;}
     .pets{display: initial;}
     .slideshow{
-        height: 200px;
-        width: 350px;
-
+            width: 100%;
+            height:400px;
+            margin: 0;
     }
 
 }
